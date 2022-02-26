@@ -19,21 +19,29 @@ package io.material.catalog.elevation;
 import io.material.catalog.R;
 
 import android.os.Bundle;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
+
 import com.google.android.material.elevation.ElevationOverlayProvider;
 import com.google.android.material.internal.ViewUtils;
+
 import io.material.catalog.feature.DemoActivity;
+
 import java.util.Locale;
 
-/** A fragment that displays the Elevation Overlay demo for the Catalog app. */
+/**
+ * A fragment that displays the Elevation Overlay demo for the Catalog app.
+ */
 public class ElevationOverlayDemoActivity extends DemoActivity {
 
   @Override
@@ -57,7 +65,7 @@ public class ElevationOverlayDemoActivity extends DemoActivity {
   }
 
   protected int[] getElevationDpValues() {
-    return new int[] {1, 2, 3, 4, 6, 8, 12, 16, 24};
+    return new int[]{1, 2, 3, 4, 6, 8, 12, 16, 24};
   }
 
   private class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
